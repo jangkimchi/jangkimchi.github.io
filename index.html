@@ -1,64 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Our Products</title>
-    <!-- Tailwind CSS CDN -->
+    <meta name="description" content="Freshly made homemade kimchi in Singapore, tailored for the Southeast Asian palate. Contact us to enjoy delicious, healthy kimchi!">
+    <meta name="keywords" content="kimchi, homemade kimchi, singapore kimchi, fresh kimchi, jang kimchi">
+    <title>Homemade Kimchi</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="https://via.placeholder.com/16x16?text=J" type="image/png">
+    <style>
+        /* Adding smooth scroll for better user experience */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 font-sans text-gray-900">
 
-    <!-- Header Section -->
-    <header class="bg-[#c50c31] text-white py-6 text-center">
-        <h1 class="text-3xl font-bold">Explore Our Premium Products</h1>
-        <p class="text-lg mt-2">High-quality, crafted with care for every need.</p>
-    </header>
+<body class="bg-gray-100 font-sans antialiased">
 
-    <!-- Products Section -->
-    <section class="py-12 px-4">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Product 1 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src="https://via.placeholder.com/400" alt="Product 1" class="w-full h-64 object-cover">
-                <div class="p-6">
-                    <h2 class="text-2xl font-semibold text-gray-800">Product 1</h2>
-                    <p class="text-gray-600 mt-2">A description of Product 1. This is a high-quality product designed to meet your needs. Great value for money!</p>
-                </div>
+<!-- Navigation Bar -->
+<nav class="fixed top-0 left-0 w-full bg-white shadow-md z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <!-- Logo Placeholder -->
+            <div class="text-xl font-bold text-green-600">
+                <span>Logo</span>
             </div>
 
-            <!-- Product 2 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src="https://via.placeholder.com/400" alt="Product 2" class="w-full h-64 object-cover">
+            <!-- Navigation Links -->
+            <div class="flex items-center space-x-6">
+                <a href="#home" class="text-gray-700 hover:text-green-600">Home</a>
+                <a href="#products" class="text-gray-700 hover:text-green-600">Products</a>
+                <a href="#reviews" class="text-gray-700 hover:text-green-600">Reviews</a>
+                <a href="#about" class="text-gray-700 hover:text-green-600">About</a>
+                <a href="#contact" class="bg-red-500 text-white px-4 py-2 rounded-full hover:bg-red-600 flex items-center justify-center">Contact</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="h-screen flex items-center justify-center bg-green-200 text-center text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Left Side: Title and Paragraph -->
+        <div class="flex flex-col justify-center space-y-4">
+            <h1 class="text-4xl font-bold text-green-800">Freshly made Kimchi in Singapore</h1>
+            <p class="text-lg text-gray-700">
+                No MSG. No Preservatives. Using the freshest ingredients, Jang Kimchi delivers tasty, savoury, and complex
+                flavours. Handmade in small batches to give you the freshest Kimchi with every bite!
+            </p>
+        </div>
+
+        <!-- Right Side: Image of Kimchi -->
+        <div class="flex justify-center items-center">
+            <img src="https://via.placeholder.com/400x400?text=Kimchi+Jar" alt="Kimchi Jar" class="max-w-full h-auto rounded-lg shadow-lg">
+        </div>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section id="products" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-green-600 mb-8">Our Products</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Product Card 1 -->
+            <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+                <img src="https://via.placeholder.com/400x300?text=Cabbage+Kimchi" alt="Cabbage Kimchi" class="w-full h-40 object-cover">
                 <div class="p-6">
-                    <h2 class="text-2xl font-semibold text-gray-800">Product 2</h2>
-                    <p class="text-gray-600 mt-2">A description of Product 2. This item offers great performance and is perfect for those who appreciate quality craftsmanship.</p>
+                    <h3 class="text-xl font-semibold mb-2">Cabbage Kimchi 배추김치</h3>
+                    <p class="text-gray-700 mb-2">Small (400g): $11.90</p>
+                    <p class="text-gray-700">Medium (550g): $14.90</p>
                 </div>
             </div>
-
-            <!-- Product 3 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src="https://via.placeholder.com/400" alt="Product 3" class="w-full h-64 object-cover">
+            <!-- Product Card 2 -->
+            <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+                <img src="https://via.placeholder.com/400x300?text=Cucumber+Kimchi" alt="Cucumber Kimchi" class="w-full h-40 object-cover">
                 <div class="p-6">
-                    <h2 class="text-2xl font-semibold text-gray-800">Product 3</h2>
-                    <p class="text-gray-600 mt-2">A description of Product 3. A premium product built for durability and efficiency, providing excellent value.</p>
+                    <h3 class="text-xl font-semibold mb-2">Cucumber Kimchi 오이소박이</h3>
+                    <p class="text-gray-700 mb-2">Small (420g): $10.90</p>
+                    <p class="text-gray-700">Medium (570g): $13.90</p>
+                </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+                <img src="https://via.placeholder.com/400x300?text=Radish+Kimchi" alt="Radish Kimchi" class="w-full h-40 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Radish Kimchi 깍두기</h3>
+                    <p class="text-gray-700 mb-2">Small (420g): $13.90</p>
+                    <p class="text-gray-700">Medium (570g): $16.90</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- WhatsApp Link Section -->
-    <section class="bg-[#c50c31] text-white py-6 text-center">
-        <h2 class="text-2xl font-semibold">Have Questions? Get in Touch!</h2>
-        <p class="text-lg mt-2">Feel free to contact us via WhatsApp for inquiries or to place an order.</p>
-        <a href="https://wa.me/+1234567890" class="mt-4 inline-block bg-green-500 text-white py-3 px-8 rounded-lg text-lg hover:bg-green-600 transition duration-300">Contact Us on WhatsApp</a>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-[#c50c31] text-white text-center py-4 mt-8">
-        <p>&copy; 2025 Your Company. All rights reserved.</p>
-    </footer>
+<!-- Reviews Section -->
+<section id="reviews" class="py-20 bg-green-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-green-600 mb-8">What Our Customers Are Saying</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Review 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <p class="text-gray-700 mb-4">"Super nice cabbage and cucumber kimchi! One of the best I’ve tried in Singapore!"</p>
+                <p class="font-bold text-green-600">-- Coey</p>
+            </div>
+            <!-- Review 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <p class="text-gray-700 mb-4">"So delicious! We can’t stop ourselves from having more once we reached home!"</p>
+                <p class="font-bold text-green-600">-- Natalie</p>
+            </div>
+            <!-- Review 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <p class="text-gray-700 mb-4">"Mindblowing kimchi with no preservatives. One is clearly not enough!"</p>
+                <p class="font-bold text-green-600">-- Shawn</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-green-600 mb-8">Our Story</h2>
+        <p class="text-lg text-gray-700 text-center mb-4">We realised that the Kimchi sold in supermarkets is too sour and not fresh enough for our liking. We then wanted to create a fresh, healthy, and flavourful Kimchi that is perfect for the Southeast Asian palate.</p>
+        <p class="text-lg text-gray-700 text-center">We have been selling Kimchi in small batches since 2022, mainly active in groupbuys / Instagram pre-orders.</p>
+        <p class="text-lg text-gray-700 text-center mt-4">Do contact us via WhatsApp at <a href="https://wa.me/6584956833" class="text-green-600 underline">+65 8495 6833</a> if you have any questions!</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-green-200 text-white text-center">
+    <div>
+        <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+        <p class="text-lg mb-4">Have questions or want to place an order? Reach out to us!</p>
+        <a href="https://wa.me/6584956833" class="bg-red-500 px-6 py-3 rounded-full text-white hover:bg-red-600">WhatsApp Us</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+        <p class="text-sm">Copyright © 2022 Jang Kimchi. All rights reserved.</p>
+        <div class="flex space-x-4">
+            <a href="https://www.instagram.com/jang.kimchi/" target="_blank" class="hover:text-green-500">
+                <i class="fab fa-instagram"></i> IG
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100087801115486" target="_blank" class="hover:text-green-500">
+                <i class="fab fa-facebook"></i> FB
+            </a>
+            <a href="https://wa.me/6584956833" target="_blank" class="hover:text-green-500">
+                <i class="fab fa-whatsapp"></i> WA
+            </a>
+        </div>
+    </div>
+</footer>
 
 </body>
+
 </html>
